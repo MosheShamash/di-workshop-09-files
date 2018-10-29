@@ -1,1 +1,10 @@
-console.log('your code here')
+var fs = require('fs')
+var fileContents = fs.readFileSync('names.txt', 'utf-8')
+var arrayFileContents = fileContents.split("\n")
+var flippedArray = arrayFileContents.reverse()
+// var stringOneLine = fileContents.replace(/[\n]+/g, ' ')
+// var arrayOneLine = stringOneLine.split(' ')
+// console.log(stringOneLine)
+console.log(flippedArray)
+fs.writeFileSync('names-reversed.txt', flippedArray, 'utf-8')
+

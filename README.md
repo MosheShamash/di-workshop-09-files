@@ -48,10 +48,10 @@ var fileContents = fs.readFileSync('names.txt')
 console.log(fileContents)
 ```
 
-Before you run the code, read it carefully. **What do you think it’ll do?**
+Before you run the code, read it carefully. **What do you think it’ll do?** I think it will log the contents of names.txt file
 
 Run the code in your terminal with `node part-1.js`. **What happened? Was it
-what you expected?**
+what you expected?** was not what I expected
 
 You’ll probably find that you get something with the word ‘`Buffer`’ and a bunch
 of weird letters and numbers. These are the bytes from our file, the raw data
@@ -68,9 +68,9 @@ var fileContents = fs.readFileSync('names.txt', 'utf-8')
 Run your code and see what the difference is. So some research to answer these
 questions:
 
-- **What does utf-8 mean**
-- **Why does adding it change what our code does?**
-- Extra: **what other things could we try adding instead of `utf-8`?**
+- **What does utf-8 mean** standard formating of text on computer
+- **Why does adding it change what our code does?** beacuse it now knows what format to log the information in
+- Extra: **what other things could we try adding instead of `utf-8`?**  `utf-16`
 
 Now, `readFileSync` should be returning a _string_ containing the contents of
 our file.
@@ -129,6 +129,14 @@ In this exercise, we’re going to be working with JSON. Do some research and
 answer the following questions:
 
 - **What is JSON?**
+
+JSON: JavaScript Object Notation.
+
+JSON is a syntax for storing and exchanging data.
+
+JSON is text, written with JavaScript object notation.
+
+
 - **What’s it used for?**
 - **What does it look like?**
 - **Where have we seen it before?**
